@@ -10,7 +10,7 @@
   <meta property="og:description" content="Email, SMS, and Paid Social for streetwear brands. Book a free growth audit." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/assets/banner.png" />
-  <link rel="icon" href="/assets/logo.png" />
+  <link rel="icon" href="assets/logo.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -44,7 +44,7 @@
       box-shadow: 0 8px 28px rgba(31,122,89,0.35), 0 6px 18px rgba(15,61,94,0.35);
     }
     .stroke-title { -webkit-text-stroke: 1px rgba(255,255,255,0.12); }
-    .grid-dots {
+    .grid-dots { pointer-events: none; 
       background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
       background-size: 18px 18px;
       background-position: -5px -5px;
@@ -90,7 +90,7 @@
         </div>
       </div>
       <div class="flex-1 w-full">
-        <img src="/assets/banner.png" alt="Pulse Growth banner" class="w-full rounded-2xl border border-white/10 shadow-xl" />
+        <img src="assets/banner.png" alt="Pulse Growth banner" class="w-full rounded-2xl border border-white/10 shadow-xl" />
       </div>
     </div>
   </section>
@@ -175,7 +175,7 @@
           </div>
         </div>
 
-        <form name="apply" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html" class="md:w-1/2 mt-8 md:mt-0 grid grid-cols-1 gap-4">
+        <form name="apply" method="POST" netlify data-netlify="true" netlify-honeypot="bot-field" data-netlify-honeypot="bot-field" action="/thank-you.html" class="md:w-1/2 mt-8 md:mt-0 grid grid-cols-1 gap-4">
           <input type="hidden" name="form-name" value="apply" />
           <p class="hidden">
             <label>Don’t fill this out: <input name="bot-field" /></label>

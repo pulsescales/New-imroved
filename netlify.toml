@@ -1,0 +1,26 @@
+[build]
+  publish = "."
+  command = ""
+
+[[plugins]]
+  package = "@netlify/plugin-inline-functions-env"
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = false
+
+[build.processing.css]
+  bundle = false
+  minify = false
+
+[build.processing.js]
+  bundle = false
+  minify = false
+
+# Redirects not required, but keeping a generic 404 to index.html if needed later
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
